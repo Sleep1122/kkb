@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Klaim Hadiah</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fff3e0;
+            color: #333;
+            padding: 40px;
+        }
+
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+            border-top: 5px solid #ff9800;
+        }
+
+        h2 {
+            color: #e65100;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e64a19;
+        }
+
+        .note {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulir Pengambilan Hadiah</h2>
+        <form action="#" method="post" onsubmit="return handleSubmit()">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="ktp">Nomor KTP</label>
+            <input type="text" id="ktp" name="ktp" required>
+
+            <label for="bank">Nomor Rekening</label>
+            <input type="text" id="bank" name="bank" required>
+
+            <label for="telepon">Nomor HP Aktif</label>
+            <input type="text" id="telepon" name="telepon" required>
+
+            <button type="submit">Kirim Data</button>
+        </form>
+        <p class="note">Mohon tunggu proses nya. Terima kasih</p>
+    </div>
+
+    <script>
+        function handleSubmit() {
+            alert("Mohon tunggu proses nya. Terima kasih");
+            return false; // Mencegah pengiriman form
+        }
+    </script>
+</body>
+</html>
